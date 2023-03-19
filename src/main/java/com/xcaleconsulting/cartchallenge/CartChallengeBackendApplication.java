@@ -19,7 +19,7 @@ public class CartChallengeBackendApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**").allowedOrigins(urlAllow).allowedMethods("*").allowedHeaders("*");
+                registry.addMapping("/**").allowedOrigins(urlAllow).allowedMethods("*").allowedHeaders("*");
             }
         };
     }
