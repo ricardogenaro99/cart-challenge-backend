@@ -15,10 +15,12 @@ public class CartChallengeBackendApplication {
 
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {
+		String urlAllow = "https://cart-challenge-frontend.vercel.app/";
+
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/**").allowedOrigins("http://localhost:3000").allowedMethods("*").allowedHeaders("*");
+				registry.addMapping("/api/**").allowedOrigins(urlAllow).allowedMethods("*").allowedHeaders("*");
 			}
 		};
 	}
