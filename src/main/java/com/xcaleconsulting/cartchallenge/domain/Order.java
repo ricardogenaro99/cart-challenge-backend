@@ -1,4 +1,4 @@
-package com.xcaleconsulting.cartchallenge.entity;
+package com.xcaleconsulting.cartchallenge.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

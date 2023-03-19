@@ -1,6 +1,8 @@
-package com.xcaleconsulting.cartchallenge.entity;
+package com.xcaleconsulting.cartchallenge.domain;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Getter
 @Setter
