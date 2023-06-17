@@ -60,7 +60,7 @@ public class CartService implements CartInputPort {
 
     @Override
     public List<Cart> getCarts() {
-        cartRepository.values().removeIf(cart -> cart.isExpired());
+        cartRepository.values().removeIf(Cart::isExpired);
         return new ArrayList<>(cartRepository.values());
     }
 

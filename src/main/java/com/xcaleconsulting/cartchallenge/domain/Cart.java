@@ -19,7 +19,7 @@ public class Cart {
 
     public Cart() {
         this.id = UUID.randomUUID().toString();
-        this.orderList = new ArrayList();
+        this.orderList = new ArrayList<>();
         this.creationTime = LocalDateTime.now();
         this.updateTime = LocalDateTime.now();
     }
